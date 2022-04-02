@@ -37,6 +37,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: sponsors.svg
+          base: ""
           token: ${{ secrets.METRICS_TOKEN }}
           plugin_sponsors: yes
   starred:
@@ -45,6 +46,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: starred.svg
+          base: ""
           token: ${{ secrets.METRICS_TOKEN }}
           plugin_stars: yes
   traffic:
@@ -53,5 +55,6 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: traffic.svg
+          base: ""
           token: ${{ secrets.METRICS_TOKEN }}
           plugin_traffic: yes
