@@ -1,1 +1,5 @@
 ![Metrics](/github-metrics.svg)
+![Languages](/languages.svg)
+![Sponsors](/sponsors.svg)
+![Starred](/starred.svg)
+![Traffic](/traffic.svg)
