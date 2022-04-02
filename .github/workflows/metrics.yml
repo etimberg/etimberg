@@ -14,3 +14,6 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           plugin_languages: yes
+          plugin_sponsors: yes
+          plugin_stars: yes
+          plugin_traffic: yes
