@@ -28,9 +28,19 @@ jobs:
           user: etimberg
           template: classic
           base: ""
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: America/Toronto
           plugin_followup: yes
           plugin_languages: yes
+  habits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: habits.svg
+          base: ""
+          token: ${{ secrets.METRICS_TOKEN }}
+          plugin_habits: yes
+          config_timezone: America/Toronto
   sponsors:
     runs-on: ubuntu-latest
     steps:
